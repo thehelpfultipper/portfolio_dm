@@ -1,11 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Hamburger from './Components/Menu/Hamburger';
+import logo from './Assets/portfolio-logo-min.svg';
+// import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <nav>
+        <Hamburger />
         <img src={logo} className="App-logo" alt="logo" />
+      </nav>
+      <header className="App-header">
+
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
