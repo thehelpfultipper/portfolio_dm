@@ -17,6 +17,25 @@
   height: 100%;
 }
 
+.App_btn {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.App_header__btn {
+  margin-left: auto;
+  position: absolute;
+  top: 86px;
+  right: 60px;
+}
+
+.App_footer__btn {
+  margin-right: auto;
+  position: absolute;
+  bottom: calc(45px - (56px / 2) + 10px);
+  left: 60px;
+}
+
 .App_foot__divider {
   margin-left: auto;
   position: absolute;
