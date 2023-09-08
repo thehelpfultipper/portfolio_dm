@@ -1,0 +1,27 @@
+
+import home from '../../Assets/menu-home-min.svg';
+import about from '../../Assets/menu-about-min.svg';
+import projects from '../../Assets/menu-projects-min.svg';
+
+import s from './OpenMenu.module.css';
+
+const OpenMenu = () => {
+    return (
+        <div className={s.OpenMenu_wrapper}>
+            <div className={s.OpenMenu_item}>
+                <img src={home} />
+                <span>Home</span>
+            </div>
+            <div className={s.OpenMenu_item}>
+                <img src={about} />
+                <span>About</span>
+            </div>
+            <div className={s.OpenMenu_item}>
+                <img src={projects} />
+                <span>Projects</span>
+            </div>
+        </div>
+    );
+}
+
+export default OpenMenu;

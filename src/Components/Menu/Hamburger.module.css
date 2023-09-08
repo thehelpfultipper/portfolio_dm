@@ -1,11 +1,7 @@
 .hbg_wrapper {
-    margin-right: 5px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    margin-left: 10px;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -18,9 +14,9 @@
   
   .hbg_wrapper span {
     display: block;
-    background-color: black;
-    width: 20px;
-    height: 2px;
+    background-color: white;
+    width: 35px;
+    height: 5px;
     border-radius: 5px;
     pointer-events: none;
     position: absolute;
@@ -33,7 +29,7 @@
   }
   
   .hbg_wrapper span:nth-of-type(1) {
-    top: calc(50% - 6px);
+    top: calc(50% - 10px);
   }
   
   .hbg_wrapper span:nth-of-type(2) {
@@ -41,21 +37,21 @@
   }
   
   .hbg_wrapper span:nth-of-type(3) {
-    top: calc(50% + 6px);
+    top: calc(50% + 10px);
   }
   
   
   /* animation classes */
   .top-center {
-    -webkit-transform: translateY(6px);
-        -ms-transform: translateY(6px);
-            transform: translateY(6px);
+    -webkit-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+            transform: translateY(10px);
   }
   
   .bottom-center {
-    -webkit-transform: translateY(-6px);
-        -ms-transform: translateY(-6px);
-            transform: translateY(-6px);
+    -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   
   .turn-45 {

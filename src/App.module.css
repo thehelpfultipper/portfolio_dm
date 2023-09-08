@@ -1,0 +1,25 @@
+.App nav {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.App_logo__wrapper {
+  width: 67px;
+  height: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(calc(100% - 80px));
+}
+
+.App-logo {
+  width: 100%;
+  height: 100%;
+}
+
+.App_foot__divider {
+  margin-left: auto;
+  position: absolute;
+  right: 0;
+  bottom: 45px;
+}
