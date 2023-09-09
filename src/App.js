@@ -20,7 +20,15 @@ function App() {
         </div>
       </nav>
       <Divider />
-      <header className="App-header">
+      <header className={s.App_header}>
+        <hgroup>
+          <h1>Hi! I'm a UI designer</h1>
+          <p>Horrvldm sflbdmva ss vd c c ss dfvd rhh grg u ssc gmym ssfsrrv i6zf fgn.</p>
+        </hgroup>
+        <div className={s.App_header__action}>
+        <Button type='button' className={s.App_content__btn}>About</Button>
+        <Button type='button' className={s.App_content__btn}>Projects</Button>
+        </div>
       </header>
       <div>
         <Button type='button' className={`${s.App_btn} ${s.App_footer__btn}`}>Franko Merkuri</Button>

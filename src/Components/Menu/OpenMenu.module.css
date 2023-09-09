@@ -27,14 +27,3 @@
     cursor: pointer;
     background: var(--bg-light-grey);
 }
-
-@keyframes reveal {
-    from {
-        height: 0;
-        top: 80px;
-    }
-    to {
-        height: 280px;
-        top: 80px;
-    }
-}
