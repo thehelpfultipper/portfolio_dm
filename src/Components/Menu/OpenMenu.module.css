@@ -13,6 +13,10 @@
   gap: 17.22px;
 }
 
+.OpenMenu_wrapper a {
+  text-decoration: none;
+}
+
 .OpenMenu_item {
   display: flex;
   flex-direction: column;
@@ -27,3 +31,4 @@
     cursor: pointer;
     background: var(--bg-light-grey);
 }
+

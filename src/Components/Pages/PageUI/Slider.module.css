@@ -1,0 +1,42 @@
+.Slider_item {
+    position: relative;
+    transition: transform .3s ease;
+    background: pink;
+}
+
+.Slider_item_image {
+    width: 500px;
+    height: 250px;
+    border-radius: 13px;
+}
+
+.Slider_item_image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+}
+
+.Slider_item_overlay {
+    width: 500px;
+    height: 250px;
+    border-radius: 13px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.Slider {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.clicked,
+.selected {
+    width: 506px;
+    height: 255.999px;
+}

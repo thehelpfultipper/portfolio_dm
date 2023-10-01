@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
 import home from '../../Assets/menu-home-min.svg';
 import about from '../../Assets/menu-about-min.svg';
@@ -8,14 +9,14 @@ import s from './OpenMenu.module.css';
 const OpenMenu = () => {
     return (
         <div className={s.OpenMenu_wrapper}>
-            <div className={s.OpenMenu_item}>
+            <Link to='/'><div className={s.OpenMenu_item}>
                 <img src={home} />
                 <span>Home</span>
-            </div>
-            <div className={s.OpenMenu_item}>
+            </div></Link>
+            <Link to='/about'><div className={s.OpenMenu_item}>
                 <img src={about} />
                 <span>About</span>
-            </div>
+            </div></Link>
             <div className={s.OpenMenu_item}>
                 <img src={projects} />
                 <span>Projects</span>

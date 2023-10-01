@@ -1,0 +1,43 @@
+.Slider_btn {
+    width: 260px;
+    height: 250px;
+    border-radius: 260px;
+    background: rgba(217, 217, 217, 0.13);
+    position: absolute;
+    z-index: 999;
+}
+
+.Slider_btn.left {
+    left: calc(-260px / 2);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Slider_btn.right {
+    right: calc(-260px / 2);
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.Slider_btn.left.active,
+.Slider_btn.right.active {
+    background: rgba(217, 217, 217, 0.15);
+}
+.Slider_btn.left.active svg,
+.Slider_btn.right.active svg {
+    fill-opacity: .29;
+}
+
+.Slider_btn.left svg {
+    position: relative;
+    left: 55%;
+}
+
+.Slider_btn svg {
+    width: 200px;
+    height: 187.5px;
+}
+
+.Slider_btn:hover {
+    cursor: pointer;
+}

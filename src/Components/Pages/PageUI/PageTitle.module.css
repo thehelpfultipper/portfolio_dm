@@ -1,0 +1,34 @@
+.PageTitle_content {
+    display: flex;
+    gap: 12px;
+}
+
+.PageTitle_divider {
+    max-width: 147px !important;
+    width: 100%;
+    position: relative;
+    left: 0;
+    /* top: 50px; */
+    margin: 0;
+    right: auto;
+    border-radius: revert;
+    align-self: center;
+}
+
+.PageTitle h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.PageTitle_socials {
+    margin-left: 9px;
+    gap: 8.5px;
+}
+
+.PageTitle_socials img {
+    width: 30px;
+    align-self: center;
+        margin-top: 10px;
+}

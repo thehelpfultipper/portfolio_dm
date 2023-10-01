@@ -1,0 +1,32 @@
+.CatTitle_content {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.CatTitle_content h3 {
+    font-size: 26px;
+    letter-spacing: 2.6px;
+    color: #fff;
+    position: relative;
+    left: calc(-5% + 12px);
+    font-weight: 500;
+}
+
+.CatTitle_divider {
+    max-width: 147px !important;
+    width: 100%;
+    position: relative;
+    left: -5%;
+    /* top: 50px; */
+    margin: 0;
+    right: auto;
+    border-radius: revert;
+    align-self: center;
+}
+
+.CatTitle_slider {
+    overflow: hidden;
+    margin-left: 12px;
+    position: relative;
+}
+
