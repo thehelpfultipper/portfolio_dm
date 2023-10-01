@@ -75,11 +75,11 @@ const Slider = (props) => {
         if (swipeDistance > swipeThreshold) {
             // Swiped to the right (next card)
             nextProject(-1);
-            nextDot(-1)
+            nextDot(-1);
         } else if (swipeDistance < swipeThreshold) {
             // Swiped to the left (previous card)
             nextProject(1);
-            nextDot(1)
+            nextDot(1);
         }
         
     };
@@ -142,11 +142,11 @@ const Slider = (props) => {
                     props.projects.map((project, index) => {
                         // Project is an object with a name, description, image, and link
                         return (
-                            <div className={`${s.Slider_item}`} style={cardStyles} key={index}>
-                                <div className={`${s.Slider_item_image} ${index === cardIndex ? s.selected : ''}`}>
+                            <div className={`${s.Slider_item} ${index === cardIndex ? s.selected : ''}`} style={cardStyles} key={index}>
+                                <div className={`${s.Slider_item_image}`}>
                                     <img src={project.image} alt={project.name} />
                                 </div>
-                                <div className={`${s.Slider_item_overlay}`}></div>
+                                <div className={s.Slider_item_overlay}></div>
                                 <div className={s.Slider_item_content}>
                                     <h4>{project.name}</h4>
                                     <p>{project.description}</p>

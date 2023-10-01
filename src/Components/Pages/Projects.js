@@ -95,7 +95,6 @@ const Projects = () => {
                         <div className={s.CatTitle_content}>
                             <Divider className={s.CatTitle_divider} />
                             <h3>{category.name}</h3>
-                            {/* <DotIndicator className={s.CatTitle_indicator} selectedIndex={selectedIndex} cardIndex={cardIndex} /> */}
                         </div>
                         <div className={s.CatTitle_slider}>
                             {
