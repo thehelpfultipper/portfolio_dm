@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 
+import React from 'react';
+
 import home from '../../Assets/menu-home-min.svg';
 import about from '../../Assets/menu-about-min.svg';
 import projects from '../../Assets/menu-projects-min.svg';
@@ -17,10 +19,10 @@ const OpenMenu = () => {
                 <img src={about} />
                 <span>About</span>
             </div></Link>
-            <div className={s.OpenMenu_item}>
+            <Link to='/projects'><div className={s.OpenMenu_item}>
                 <img src={projects} />
                 <span>Projects</span>
-            </div>
+            </div></Link>
         </div>
     );
 }
