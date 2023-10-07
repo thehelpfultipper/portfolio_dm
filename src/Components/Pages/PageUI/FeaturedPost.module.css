@@ -1,0 +1,44 @@
+.FeaturedPost_container {
+    max-width: 456px;
+    width: 100%;
+    height: 255.999px;
+    border-radius: 13px;
+    position: relative;
+}
+
+.FeaturedPost__img,
+.FeaturedPost__img img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.FeaturedPost__content {
+    position: absolute;
+    bottom: 0;
+    padding: 0 0 10px 16px;
+}
+
+.FeaturedPost__content h3 {
+    margin-bottom: 10px;
+}
+
+.FeaturedPost_container:hover .FeaturedPost__content {
+    color: #F4F4F4;
+    z-index: 999;
+}
+
+.FeaturedPost__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.60);
+    border-radius: inherit;
+}
+
+.FeaturedPost_container:hover .FeaturedPost__overlay {
+    visibility: visible;
+}
