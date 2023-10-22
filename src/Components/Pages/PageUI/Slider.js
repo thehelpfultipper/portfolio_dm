@@ -43,7 +43,7 @@ const Slider = (props) => {
     const isMobile = window.innerWidth <= 600;
 
     const touchStartHandler = (event) => {
-        if(!isMobile) return;
+        if (!isMobile) return;
 
         if (event.type === "touchstart") {
             // startX = event.changedTouches[0].clientX;
@@ -66,7 +66,7 @@ const Slider = (props) => {
         swipeHandler();
     };
 
-    
+
     const swipeHandler = (e) => {
         const swipeThreshold = 10; // Adjust the threshold as needed
 
@@ -81,7 +81,7 @@ const Slider = (props) => {
             nextProject(1);
             nextDot(1);
         }
-        
+
     };
 
     const wheelHandler = (e) => {
@@ -119,17 +119,17 @@ const Slider = (props) => {
     return (
         <Fragment>
             {
-                !isMobile ? 
-                (
-                    <Fragment>
+                !isMobile ?
+                    (
+                        <Fragment>
                             <SliderBtn left onclick={() => nextProject(-1)} />
                             <SliderBtn right onclick={() => nextProject(1)} />
-                    </Fragment>
-                ) : 
+                        </Fragment>
+                    ) :
                     <DotIndicator cardIndex={cardIndex} projects={props.projects} dotIndex={dotIndex} />
             }
-            <div 
-                className={`${s.Slider} ${props?.className}`} 
+            <div
+                className={`${s.Slider} ${props?.className}`}
                 ref={sliderContainerRef}
                 onWheel={wheelHandler}
                 onMouseDown={touchStartHandler}

@@ -9,13 +9,15 @@
 
 .Slider_btn.left {
     left: calc(-260px / 2);
-    top: 50%;
+    top: 52%;
+    /* top: 38%; */
     transform: translateY(-50%);
 }
 
 .Slider_btn.right {
     right: calc(-260px / 2);
-    bottom: 50%;
+    bottom: 48%;
+    /* bottom: 62%; */
     transform: translateY(50%);
 }
 
