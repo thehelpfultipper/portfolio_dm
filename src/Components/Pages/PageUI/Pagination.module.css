@@ -1,0 +1,23 @@
+.pagination {
+    margin: 13px auto 40px auto;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.navBtn {
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: calc(26 / 16 * 1rem);
+}
+
+.navBtn:hover {
+    cursor: pointer;
+}
+
+.paginationNav {
+    display: flex;
+    gap: 4px;
+}
+

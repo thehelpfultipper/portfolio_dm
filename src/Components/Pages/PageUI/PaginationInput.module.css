@@ -1,0 +1,40 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.74);
+}
+
+.input_wrapper {
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    /* gap: 5px; */
+    font-size: calc(38 / 16 * 1rem);
+}
+
+.input_wrapper div {
+    display: inherit;
+    justify-content: center;
+    gap: 5px;
+}
+
+.input_wrapper div input {
+    border-radius: 8px;
+    background: #FFF;
+    width: 38px;
+    text-align: center;
+    font-size: calc(28 / 16 * 1rem);
+    
+}
+
+.helperText {
+    margin: 10px auto;
+    font-size: calc(25 / 16 * 1rem);
+    line-height: 32px;
+    letter-spacing: -0.19px;
+}
