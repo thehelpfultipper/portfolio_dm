@@ -9,8 +9,8 @@ import s from './Pagination.module.css';
 const Pagination = ({ items, itemsPerPage, setCurrentPage, page }) => {
     // @items is an {}
     let [isInput, setIsInput] = useState(false);
-    
-    
+
+        
     let totalItems = items.length,
         totalPages = Math.ceil(totalItems / itemsPerPage);
 
@@ -75,7 +75,7 @@ const Pagination = ({ items, itemsPerPage, setCurrentPage, page }) => {
       }
    
     return (
-        <div className={s.pagination}>
+              <div className={s.pagination}>
             <button className={s.navBtn} onClick={prevPageHandler}>Prev</button> 
             <span className={s.paginationNav}>
                 {showBtns.map( (item, i) => {
@@ -89,7 +89,7 @@ const Pagination = ({ items, itemsPerPage, setCurrentPage, page }) => {
             {isInput && <PaginationInput page={page} setCurrentPage={setCurrentPage} totalPages={totalPages} setIsInput={setIsInput} />}
             <button className={s.navBtn} onClick={nxtPageHandler}>Next</button>     
         </div>
-    )
+          )
 }
 
 export default Pagination;

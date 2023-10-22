@@ -3,7 +3,7 @@ import s from './FeaturedPost.module.css';
 
 const FeaturedPost = (props) => {
     let {name, description, image} = props.post;
-    console.log(props,props.post)
+  
     return(
         <div className={s.FeaturedPost_container}>
             <div className={s.FeaturedPost__img}>

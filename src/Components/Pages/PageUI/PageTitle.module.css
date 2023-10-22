@@ -1,6 +1,7 @@
 .PageTitle_content {
     display: flex;
     gap: 12px;
+    margin-bottom: 80px;
 }
 
 .PageTitle_divider {
@@ -20,6 +21,7 @@
     font-size: 50px;
     font-weight: 600;
     letter-spacing: 2px;
+    margin: 0;
 }
 
 .PageTitle_socials {

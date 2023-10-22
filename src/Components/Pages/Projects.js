@@ -1,10 +1,12 @@
-import { Fragment, useState } from "react";
+import { Fragment, useState, useContext } from "react";
+import { Link } from 'react-router-dom';
 
 import PageTitle from "./PageUI/PageTitle";
 import Divider from '../UI/Divider';
 import Slider from "./PageUI/Slider";
 import DotIndicator from "./PageUI/DotIndicator";
 import SliderBtn from './PageUI/SliderBtn';
+import DataProvider from '../../context/data-context';
 
 import s from './Projects.module.css';
 
@@ -33,6 +35,96 @@ let CATEGORIES = [
             },
             {
                 name: 'Project 4',
+                description: 'This is a description of Project 4',
+                image: 'https://via.placeholder.com/150',
+                link: 'https://www.google.com'
+            },
+            {
+                name: 'Project 5',
+                description: 'This is a description of Project 4',
+                image: 'https://via.placeholder.com/150',
+                link: 'https://www.google.com'
+            },
+            {
+                name: 'Project 5',
+                description: 'This is a description of Project 4',
+                image: 'https://via.placeholder.com/150',
+                link: 'https://www.google.com'
+            },
+            {
+                name: 'Project 5',
+                description: 'This is a description of Project 4',
+                image: 'https://via.placeholder.com/150',
+                link: 'https://www.google.com'
+            },
+            {
+                name: 'Project 5',
+                description: 'This is a description of Project 4',
+                image: 'https://via.placeholder.com/150',
+                link: 'https://www.google.com'
+            },
+            {
+                name: 'Project 5',
+                description: 'This is a description of Project 4',
+                image: 'https://via.placeholder.com/150',
+                link: 'https://www.google.com'
+            },
+            {
+                name: 'Project 5',
+                description: 'This is a description of Project 4',
+                image: 'https://via.placeholder.com/150',
+                link: 'https://www.google.com'
+            },
+            {
+                name: 'Project 5',
+                description: 'This is a description of Project 4',
+                image: 'https://via.placeholder.com/150',
+                link: 'https://www.google.com'
+            },
+            {
+                name: 'Project 5',
+                description: 'This is a description of Project 4',
+                image: 'https://via.placeholder.com/150',
+                link: 'https://www.google.com'
+            },
+            {
+                name: 'Project 5',
+                description: 'This is a description of Project 4',
+                image: 'https://via.placeholder.com/150',
+                link: 'https://www.google.com'
+            },
+            {
+                name: 'Project 5',
+                description: 'This is a description of Project 4',
+                image: 'https://via.placeholder.com/150',
+                link: 'https://www.google.com'
+            },
+            {
+                name: 'Project 5',
+                description: 'This is a description of Project 4',
+                image: 'https://via.placeholder.com/150',
+                link: 'https://www.google.com'
+            },
+            {
+                name: 'Project 5',
+                description: 'This is a description of Project 4',
+                image: 'https://via.placeholder.com/150',
+                link: 'https://www.google.com'
+            },
+            {
+                name: 'Project 5',
+                description: 'This is a description of Project 4',
+                image: 'https://via.placeholder.com/150',
+                link: 'https://www.google.com'
+            },
+            {
+                name: 'Project 5',
+                description: 'This is a description of Project 4',
+                image: 'https://via.placeholder.com/150',
+                link: 'https://www.google.com'
+            },
+            {
+                name: 'Project 5',
                 description: 'This is a description of Project 4',
                 image: 'https://via.placeholder.com/150',
                 link: 'https://www.google.com'
@@ -81,6 +173,16 @@ let CATEGORIES = [
     }
 ];
 
+const CustomLink = ({ to }) => {
+    let ctx = useContext(DataProvider);
+   
+    return (
+        <Link
+            to={to} state={ctx.category}>View All
+        </Link>
+    );
+}
+
 const Projects = () => {
     let [selectedIndex, setSelectedIndex] = useState(1);
     let [cardIndex, setCardIndex] = useState(1);
@@ -91,7 +193,7 @@ const Projects = () => {
             {CATEGORIES.map((category, index) => {
                 // Category is an object with a name and projects array
                 return (
-                    <Fragment key={index}>
+                    <DataProvider.Provider value={{ category }} key={index}>
                         <div className={s.CatTitle_content}>
                             <Divider className={s.CatTitle_divider} />
                             <h3>{category.name}</h3>
@@ -101,7 +203,13 @@ const Projects = () => {
                                 <Slider projects={category.projects} setSelectedIndex={setSelectedIndex} setCardIndex={setCardIndex} />
                             }
                         </div>
-                    </Fragment>
+                        <div className={s.CatTitle_all}>
+                            <span>
+                                <CustomLink
+                                    to={`/categories/${category.name.toLowerCase()}`} />
+                            </span>
+                        </div>
+                    </DataProvider.Provider>
                 );
             })}
         </Fragment>

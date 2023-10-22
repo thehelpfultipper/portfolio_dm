@@ -1,10 +1,18 @@
+.Categories_container {
+    max-width: 1388px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.arrowNav {
+    padding-left: 16px;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(456px, 456px));
     grid-template-rows: auto;
     gap: 9px 10px;
-    max-width: 1388px;
-    width: 100%;
-    margin: 0 auto;
     justify-content: center;
 }
